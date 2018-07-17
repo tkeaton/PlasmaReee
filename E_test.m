@@ -3,11 +3,11 @@ function [Ex, Ey, Ez] = E_test()
 %   Detailed explanation goes here
 syms x y z
 k = 8.99*10^9;
-q_eff = .001;
+q_eff = 1*10^-9;
 r = [x, y, z];
 E = (k*q_eff/norm(r)^3)*r;
-Ex = matlabFunction(B(1));
-Ey = matlabFunction(B(2));
-Ez = matlabFunction(B(3));
+Ex = matlabFunction(E(1));
+Ey = matlabFunction(E(2));
+Ez = matlabFunction(E(3));
 end
 

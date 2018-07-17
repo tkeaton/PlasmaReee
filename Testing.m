@@ -1,5 +1,5 @@
 [X,Y,Z] = meshgrid(-20:2:20,-20:2:20,-20:2:20);
-[Bx, By, Bz] = B_test();
+[Bx, By, Bz] = E_test();
 Bfieldx = arrayfun(Bx,X,Y,Z);
 Bfieldy = arrayfun(By,X,Y,Z);
 Bfieldz = arrayfun(Bz,X,Y,Z);

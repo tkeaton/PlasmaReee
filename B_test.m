@@ -3,7 +3,7 @@ function [Bx, By, Bz] = B_test()
 %   Detailed explanation goes here
 syms x y z
 mu_0_red = 10^-7;
-m = [1,0,0];
+m = [0,0,11.];
 r = [x, y, z];
 B = mu_0_red *((dot(m,r)/norm(r)^3*r) + m/norm(r)^3);
 Bx = matlabFunction(B(1));
